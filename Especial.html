@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f3e9;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f27e7e;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s;
+        }
+        .message {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: slideIn 2s forwards;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f27e7e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Feliz Cumpleaños, [Nombre de tu amiga]!</h1>
+    </header>
+    <div class="message">
+        <p>En este día tan especial, quiero desearte todo lo mejor. Que este nuevo año de vida esté lleno de amor, risas y momentos inolvidables.</p>
+        <p>¡Espero que tengas un cumpleaños maravilloso!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tu Amigo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebración del 21 de septiembre con flores amarillas para una persona especial.">
+    <title>Flores Amarillas - 21 de Septiembre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8dc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #ffeb3b;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 600px;
+        }
+        h1 {
+            color: #ffeb3b;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #fdd835;
+        }
+        #message {
+            display: none;
+            font-size: 1.5rem;
+            color: #ffeb3b;
+            margin-top: 20px;
+        }
+        #flowerImage {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz 21 de Septiembre!</h1>
+        <p>Te regalo estas flores amarillas para celebrar este día especial contigo te quiero mucho Juriku sonsa :D.</p>
+        <p>Que este día esté lleno de amor, felicidad y flores que iluminen tu vida no esta hecho de la mejor forma pero espero te guste.</p>
+        <button class="btn" onclick="mostrarImagen()">Enviar un Mensaje Especial</button>
+        <div id="message">¡Gracias por ser especial se le quiere cuidese y tome aguita porfavor :D!</div>
+        <!-- Asegúrate de que la ruta de la imagen es accesible -->
+        <img id="flowerImage" src="file:///d:/Users/Thermaltake/Pictures/flores.jpg" alt="Flor Amarilla">
+    </div>
+
+    <script>
+        function mostrarImagen() {
+            // Mostrar el mensaje
+            const message = document.getElementById("message");
+            message.style.display = "block";
+
+            // Mostrar la imagen
+            const image = document.getElementById("flowerImage");
+            image.style.display = "block";
+        }
+    </script>
+</body>
+</html>
